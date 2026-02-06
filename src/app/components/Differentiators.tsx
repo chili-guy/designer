@@ -1,43 +1,53 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { DeviceMockup } from '@/app/components/DeviceMockup';
 
 const differentiators = [
   {
-    title: "Construído para Escalabilidade Empresarial",
-    description: "Gerencie milhares de ativos de torres em um único banco de dados unificado. A arquitetura do Zeo App foi construída para atender às rigorosas demandas de operadores de telecomunicações multinacionais.",
-    image: "https://images.unsplash.com/photo-1701513097378-78db9d01d2fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWxlY29tbXVuaWNhdGlvbiUyMHRvd2VyJTIwZW5naW5lZXJpbmclMjBibHVlcHJpbnR8ZW58MXx8fHwxNzY5ODA0NzU4fDA",
+    title: "Entrada Inteligente de Dados",
+    description: "Interface amigável para inserção de dados técnicos da estrutura.",
+    image: "/secao4/1-entrada-de-dados.png",
     list: [
-      "Repositório Centralizado de Ativos",
-      "Arquitetura de Segurança Multi-inquilino",
-      "Colaboração de Equipes Globais"
+      "Cadastro simplificado de estruturas",
+      "Importação e validação automática",
+      "Interface intuitiva para engenheiros"
     ]
   },
   {
-    title: "Velocidade Computacional Inigualável",
-    description: "Nosso motor de solver proprietário reduz o tempo de cálculo de horas para minutos. Execute simulações não lineares complexas na nuvem sem sobrecarregar o hardware local.",
-    image: "https://images.unsplash.com/photo-1769654063887-413c2f294617?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJ1Y3R1cmFsJTIwc3RlZWwlMjBjb25zdHJ1Y3Rpb24lMjBkZXRhaWx8ZW58MXx8fHwxNzY5ODA0NzU4fDA",
+    title: "Normas Técnicas Brasileiras",
+    description: "Processamento 100% alinhado com as normas vigentes de engenharia.",
+    image: "/secao4/2-normas-brasileiras.png",
     list: [
-      "Resolução Acelerada por GPU",
-      "Capacidades de Processamento Paralelo",
-      "Geração Instantânea de Relatórios"
+      "Conformidade NBR e Eurocode",
+      "Verificação TIA-222-H integrada",
+      "Atualização contínua das normas"
     ]
   },
   {
-    title: "Ecossistema de Integração Contínua",
-    description: "Conecte o Zeo App aos seus sistemas existentes de CRM, Gestão de Ativos ou ERP. Automatize o processo de verificação estrutural de ponta a ponta com facilidade.",
-    image: "https://images.unsplash.com/photo-1664526936810-ec0856d31b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRhdGElMjBuZXR3b3JrJTIwdG9wb2xvZ3l8ZW58MXx8fHwxNzY5ODA0NzU4fDA",
+    title: "Resposta Instantânea",
+    description: "Geração de relatórios técnicos detalhados imediatamente após o cálculo.",
+    image: "/secao4/3-resposta-instantanea.png",
     list: [
-      "Interface API RESTful",
-      "Formatos Personalizados de Exportação",
-      "Conectores de Software de Terceiros"
+      "Cálculo em minutos, não em horas",
+      "Relatórios prontos na hora",
+      "Aprovação e reprovação automática"
+    ]
+  },
+  {
+    title: "Dashboard e Analytics",
+    description: "Centro de comando para visualização da ocupação da planta em tempo real.",
+    image: "/secao4/4-dashboard.png",
+    list: [
+      "Visão em tempo real dos ativos",
+      "Ocupação da planta centralizada",
+      "Métricas e indicadores de desempenho"
     ]
   }
 ];
 
 export const Differentiators = () => {
   return (
-    <section id="solutions" className="py-24 bg-gray-50">
+    <section id="solutions" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-32">
           {differentiators.map((diff, idx) => (
@@ -69,20 +79,14 @@ export const Differentiators = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex-1 w-full"
+                className="flex-1 w-full flex justify-center lg:justify-end"
               >
-                <div className="relative aspect-[16/10] bg-white shadow-2xl overflow-hidden">
-                  <ImageWithFallback
+                <div className="relative w-fit max-w-full transition-all duration-300 hover:-translate-y-1">
+                  <DeviceMockup
                     src={diff.image}
                     alt={diff.title}
-                    className="w-full h-full object-cover"
+                    className="min-w-[32rem] max-w-[52rem]"
                   />
-                  {/* Technical overlay */}
-                  <div className="absolute inset-0 bg-black/5 mix-blend-multiply" />
-                  <div className="absolute top-4 left-4 flex gap-2">
-                    <div className="px-2 py-1 bg-black/80 text-[8px] font-bold text-white tracking-widest uppercase">ZEO-SYS-04</div>
-                    <div className="px-2 py-1 bg-[#FF6B00] text-[8px] font-bold text-white tracking-widest uppercase">ATIVO</div>
-                  </div>
                 </div>
               </motion.div>
             </div>

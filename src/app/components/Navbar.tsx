@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Menu, X, ArrowRight } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -8,13 +8,13 @@ export const Navbar = () => {
   const navLinks = [
     { name: 'Soluções', href: '#solutions' },
     { name: 'Funcionalidades', href: '#features' },
-    { name: 'Empresarial', href: '#enterprise' },
-    { name: 'Recursos', href: '#resources' },
+    { name: 'Empresarial', href: '#contact' },
+    { name: 'Recursos', href: '#solutions' },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-100">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <a href="/" className="flex items-center gap-2">
@@ -36,9 +36,14 @@ export const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <button className="bg-black text-white px-5 py-2.5 text-sm font-semibold hover:bg-gray-800 transition-all">
-              Solicitar Demo
-            </button>
+            <a
+              href="https://zeo.app.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#FF6B00] text-white px-5 py-2.5 text-sm font-semibold rounded-lg hover:bg-[#E66000] transition-all"
+            >
+              Acesso ao Sistema
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -71,9 +76,14 @@ export const Navbar = () => {
             </a>
           ))}
           <div className="pt-4 px-3">
-            <button className="w-full bg-[#FF6B00] text-white px-5 py-3 text-sm font-semibold">
-              Começar
-            </button>
+            <a
+              href="https://zeo.app.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-[#FF6B00] text-white px-5 py-3 text-sm font-semibold text-center rounded-lg"
+            >
+              Acesso ao Sistema
+            </a>
           </div>
         </motion.div>
       )}

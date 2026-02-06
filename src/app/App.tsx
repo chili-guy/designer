@@ -2,12 +2,12 @@ import React from 'react';
 import { Navbar } from '@/app/components/Navbar';
 import { Hero } from '@/app/components/Hero';
 import { LogoCloud } from '@/app/components/LogoCloud';
+import { QuemSomos } from '@/app/components/QuemSomos';
 import { FeatureGrid } from '@/app/components/FeatureGrid';
 import { Differentiators } from '@/app/components/Differentiators';
 import { Metrics } from '@/app/components/Metrics';
-import { UseCases } from '@/app/components/UseCases';
-import { Testimonials } from '@/app/components/Testimonials';
-import { SecuritySection } from '@/app/components/SecuritySection';
+import { Roadmap } from '@/app/components/Roadmap';
+import { ContactSection } from '@/app/components/ContactSection';
 import { Footer } from '@/app/components/Footer';
 
 function App() {
@@ -17,12 +17,12 @@ function App() {
       <main>
         <Hero />
         <LogoCloud />
+        <QuemSomos />
         <FeatureGrid />
         <Differentiators />
         <Metrics />
-        <UseCases />
-        <Testimonials />
-        <SecuritySection />
+        <Roadmap />
+        <ContactSection />
       </main>
       <Footer />
     </div>

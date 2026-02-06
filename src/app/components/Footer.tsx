@@ -3,9 +3,9 @@ import { ArrowRight, Linkedin, Twitter, Github } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-24 pb-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row justify-between items-start mb-24 gap-12">
+    <footer className="w-full bg-black text-white pt-24 pb-12">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row justify-between items-start mb-24 gap-12 lg:gap-24">
           <div className="max-w-xl">
             <h2 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight tracking-tighter">
               Pronto para modernizar <br />
@@ -25,7 +25,7 @@ export const Footer = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-16">
+          <div className="grid grid-cols-2 gap-16 ml-auto">
             <div>
               <h4 className="text-xs font-bold uppercase tracking-widest text-[#FF6B00] mb-6">Produto</h4>
               <ul className="space-y-4 text-sm font-medium text-gray-400">
@@ -47,7 +47,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 bg-[#FF6B00]" />
             <span className="text-lg font-bold tracking-tight">ZEO APP</span>

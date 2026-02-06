@@ -150,6 +150,7 @@
 
   html {
     font-size: var(--font-size);
+    scrollbar-gutter: stable;
   }
 
   h1 {

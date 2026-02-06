@@ -24,7 +24,7 @@ export const LogoCloud = () => {
   const trackContent = [...partners, ...partners];
 
   return (
-    <section className="py-16 border-y border-gray-100 bg-gray-50/50 overflow-hidden">
+    <section className="py-16 border-y border-gray-100 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-12">
           Confiado pelos principais provedores de infraestrutura do mundo
