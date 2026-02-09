@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { DeviceMockup } from '@/app/components/DeviceMockup';
 
 const differentiators = [
   {
@@ -47,8 +46,16 @@ const differentiators = [
 
 export const Differentiators = () => {
   return (
-    <section id="solutions" className="py-24 bg-white">
+    <section id="diferenciais" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4 tracking-tight">
+            Recursos e Diferenciais
+          </h2>
+          <p className="text-lg text-gray-600">
+            Tecnologia de ponta para otimizar a sua operação
+          </p>
+        </div>
         <div className="space-y-32">
           {differentiators.map((diff, idx) => (
             <div key={diff.title} className={`flex flex-col lg:flex-row gap-16 items-center ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
@@ -82,10 +89,10 @@ export const Differentiators = () => {
                 className="flex-1 w-full flex justify-center lg:justify-end"
               >
                 <div className="relative w-fit max-w-full transition-all duration-300 hover:-translate-y-1">
-                  <DeviceMockup
+                  <img
                     src={diff.image}
                     alt={diff.title}
-                    className="min-w-[32rem] max-w-[52rem]"
+                    className="min-w-[32rem] max-w-[52rem] w-full h-auto rounded-sm object-cover shadow-lg"
                   />
                 </div>
               </motion.div>

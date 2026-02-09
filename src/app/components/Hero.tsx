@@ -5,7 +5,7 @@ import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 
 export const Hero = () => {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+    <section id="home" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
       {/* Background Hexagon Pattern - honeycomb overlay */}
       <div
         className="absolute inset-0 z-0 opacity-[0.04] pointer-events-none"
@@ -30,7 +30,7 @@ export const Hero = () => {
               Elimine gargalos e acelere resultados no mercado 5G. Transforme dias de espera em minutos de análise estrutural automatizada.
             </p>
             <a
-              href="#solutions"
+              href="#solucao"
               className="inline-flex bg-[#FF6B00] text-white px-8 py-4 font-bold rounded-lg hover:bg-[#E66000] transition-all"
             >
               Conheça o Zeo App
@@ -53,7 +53,7 @@ export const Hero = () => {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-400 animate-bounce">
-          <a href="#solutions" aria-label="Rolar para baixo">
+          <a href="#solucao" aria-label="Rolar para baixo">
             <ChevronDown size={32} strokeWidth={2} />
           </a>
         </div>

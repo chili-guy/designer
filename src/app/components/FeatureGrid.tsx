@@ -16,7 +16,7 @@ const solucaoItems = [
 
 export const FeatureGrid = () => {
   return (
-    <section id="features" className="py-24 bg-white">
+    <section id="solucao" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4 tracking-tight">
@@ -32,15 +32,15 @@ export const FeatureGrid = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="p-8 bg-white rounded-lg shadow-lg border border-gray-100"
+            className="p-8 bg-gray-200 rounded-lg shadow-lg border border-gray-300"
           >
-            <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mb-6">
-              <Clock className="text-red-500" size={24} strokeWidth={2} />
+            <div className="w-12 h-12 rounded-full bg-gray-400 flex items-center justify-center mb-6">
+              <Clock className="text-gray-600" size={24} strokeWidth={2} />
             </div>
-            <h3 className="text-xl font-bold text-black mb-8">O Processo Atual</h3>
+            <h3 className="text-xl font-bold text-gray-700 mb-8">O Processo Atual</h3>
             <ul className="space-y-6">
               {problemaItems.map((item) => (
-                <li key={item.text} className="flex items-start gap-4 text-gray-700">
+                <li key={item.text} className="flex items-start gap-4 text-gray-600">
                   <item.icon size={20} className="text-gray-500 mt-0.5 shrink-0" />
                   <span>{item.text}</span>
                 </li>
@@ -70,6 +70,9 @@ export const FeatureGrid = () => {
           </motion.div>
         </div>
 
+        <div className="mt-16 flex justify-center">
+          <img src="/esse.png" alt="Zeo App" className="max-w-3xl w-full h-auto" />
+        </div>
       </div>
     </section>
   );

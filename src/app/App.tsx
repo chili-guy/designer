@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar } from '@/app/components/Navbar';
 import { Hero } from '@/app/components/Hero';
-import { LogoCloud } from '@/app/components/LogoCloud';
 import { QuemSomos } from '@/app/components/QuemSomos';
 import { FeatureGrid } from '@/app/components/FeatureGrid';
 import { Differentiators } from '@/app/components/Differentiators';
@@ -16,7 +15,6 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <LogoCloud />
         <QuemSomos />
         <FeatureGrid />
         <Differentiators />

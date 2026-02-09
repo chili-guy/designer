@@ -6,10 +6,12 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const navLinks = [
-    { name: 'Soluções', href: '#solutions' },
-    { name: 'Funcionalidades', href: '#features' },
-    { name: 'Empresarial', href: '#contact' },
-    { name: 'Recursos', href: '#solutions' },
+    { name: 'Home', href: '#home' },
+    { name: 'Sobre nós', href: '#sobre' },
+    { name: 'Solução', href: '#solucao' },
+    { name: 'Diferenciais', href: '#diferenciais' },
+    { name: 'Roadmap', href: '#roadmap' },
+    { name: 'Contato', href: '#contact' },
   ];
 
   return (
@@ -42,7 +44,7 @@ export const Navbar = () => {
               rel="noopener noreferrer"
               className="bg-[#FF6B00] text-white px-5 py-2.5 text-sm font-semibold rounded-lg hover:bg-[#E66000] transition-all"
             >
-              Acesso ao Sistema
+              Acesse o Zeo App
             </a>
           </div>
 
@@ -82,7 +84,7 @@ export const Navbar = () => {
               rel="noopener noreferrer"
               className="block w-full bg-[#FF6B00] text-white px-5 py-3 text-sm font-semibold text-center rounded-lg"
             >
-              Acesso ao Sistema
+              Acesse o Zeo App
             </a>
           </div>
         </motion.div>

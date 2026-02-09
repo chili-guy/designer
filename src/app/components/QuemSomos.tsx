@@ -9,14 +9,16 @@ const stats = [
 
 export const QuemSomos = () => {
   return (
-    <section className="py-24 bg-white">
+    <section id="sobre" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6 tracking-tight">
             Quem Somos
           </h2>
           <p className="text-lg text-black max-w-3xl mx-auto leading-relaxed">
-            Somos o Zeo App: a plataforma que revoluciona a gestão de infraestrutura. Com mais de 20 anos de expertise no mercado de telecomunicações, criamos uma solução capaz de simplificar processos complexos e elevar o controle da sua planta.
+            Somos o Zeo App: a plataforma que revoluciona a gestão de infraestrutura.
+            <br />
+            Com mais de 20 anos de expertise no mercado de telecomunicações, criamos uma solução capaz de simplificar processos complexos e elevar o controle da sua planta.
           </p>
         </div>
 

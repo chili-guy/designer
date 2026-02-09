@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Cpu, Scale, Building2 } from 'lucide-react';
+import { Cpu, Coins, Building2 } from 'lucide-react';
 
 const roadmapItems = [
   {
@@ -9,7 +9,7 @@ const roadmapItems = [
     description: "Acesso rápido a dados de ocupação e antenas por cidade.",
   },
   {
-    icon: Scale,
+    icon: Coins,
     title: "Estimativa de Reforço",
     description: "Cálculo automático do peso necessário para reforço de torres.",
   },
@@ -22,7 +22,7 @@ const roadmapItems = [
 
 export const Roadmap = () => {
   return (
-    <section className="py-24 bg-white">
+    <section id="roadmap" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4 tracking-tight">

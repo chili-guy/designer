@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'motion/react';
 
 const stats = [
-  { label: "Ativos Analisados", value: "250 mil+", sub: "Gerenciados globalmente" },
-  { label: "Velocidade de Cálculo", value: "12x", sub: "Mais rápido que desktop" },
-  { label: "Normas de Conformidade", value: "45+", sub: "Códigos regionais suportados" },
-  { label: "Uptime Empresarial", value: "99,99%", sub: "Disponibilidade do serviço" }
+  { label: "Laudos Analisados", value: "10 mil+", sub: "Presença em todo o Brasil" },
+  { label: "Velocidade de Cálculo", value: "120x", sub: "Resposta rápida para seu cliente" },
+  { label: "Normas Técnicas", value: "100%", sub: "Atualização constante das normas" },
+  { label: "Serviço em Nuvem", value: "100%", sub: "Serviço totalmente online" }
 ];
 
 export const Metrics = () => {
