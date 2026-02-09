@@ -27,9 +27,15 @@ export const ContactSection = () => {
         <iframe
           title="Localização - Rua Alexandre Dumas, São Paulo"
           src="https://www.openstreetmap.org/export/embed.html?bbox=-46.682,-23.608,-46.662,-23.582&layer=mapnik&marker=-23.595,-46.672"
-          className="absolute inset-0 w-full h-full border-0 pointer-events-none"
+          className="absolute border-0 pointer-events-none"
           sandbox="allow-scripts"
-          style={{ filter: 'grayscale(100%) brightness(1.2)' }}
+          style={{
+            filter: 'grayscale(100%) brightness(1.2)',
+            width: 'calc(100% + 60px)',
+            height: 'calc(100% + 60px)',
+            left: '-60px',
+            bottom: '-60px',
+          }}
         />
       </div>
 
