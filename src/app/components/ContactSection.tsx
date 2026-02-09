@@ -29,10 +29,9 @@ export const ContactSection = () => {
           src="https://www.openstreetmap.org/export/embed.html?bbox=-46.682,-23.608,-46.662,-23.582&layer=mapnik&marker=-23.595,-46.672"
           className="absolute inset-0 w-full h-full border-0 pointer-events-none"
           sandbox="allow-scripts"
-          style={{ filter: 'grayscale(100%) brightness(1.05)' }}
+          style={{ filter: 'grayscale(100%) brightness(1.2)' }}
         />
       </div>
-      <div className="absolute inset-0 bg-black/5" aria-hidden />
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-black rounded-xl shadow-2xl overflow-hidden flex flex-col lg:flex-row min-h-[500px]">
