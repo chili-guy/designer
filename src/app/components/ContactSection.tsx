@@ -26,15 +26,10 @@ export const ContactSection = () => {
       <div className="absolute inset-0 overflow-hidden">
         <iframe
           title="Localização - Rua Alexandre Dumas, São Paulo"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-46.682%2C-23.608%2C-46.662%2C-23.582&layer=mapnik&marker=-23.595%2C-46.672"
-          className="absolute border-0 pointer-events-none"
-          style={{
-            filter: 'grayscale(100%) brightness(1.05)',
-            width: 'calc(100% + 80px)',
-            height: 'calc(100% + 80px)',
-            left: '-80px',
-            top: '-80px',
-          }}
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-46.682,-23.608,-46.662,-23.582&layer=mapnik&marker=-23.595,-46.672"
+          className="absolute inset-0 w-full h-full border-0 pointer-events-none"
+          sandbox="allow-scripts"
+          style={{ filter: 'grayscale(100%) brightness(1.05)' }}
         />
       </div>
       <div className="absolute inset-0 bg-black/5" aria-hidden />
