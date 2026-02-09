@@ -71,7 +71,7 @@ export const FeatureGrid = () => {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <img src="/esse.png" alt="Zeo App" className="max-w-3xl w-full h-auto" />
+          <img src="/mockupparaadicionar.png" alt="Zeo App" className="max-w-3xl w-full h-auto" />
         </div>
       </div>
     </section>
